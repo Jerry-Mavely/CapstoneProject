@@ -12,3 +12,25 @@ Now i want a matching algorithm to match the patient and doctors based on the cu
 okay few things to make clear here:
 
 1. in the encounter data: the maximum repeated encounters between a pair of patient and provider is 2. most of the patient and provider pair have 1 encounter between them.
+
+
+
+
+
+I have a data science project in Health care domain where i have to match/recommend doctors to patients based on cultural metric like language, ethnicity, race, location and specialization.  I have uploaded a csv which contains samples from each dataset i have on each sheet viz. Patient_df, encounter_df, hospital_df and provider_df. the columns in datasets are:
+
+patient: patient_id, first_name, last_name, date_of_birth, gender, race, ethnicity, primary_language, zip_code, insurance_type, household_income, education_level, age, cultural_background, preferred_provider_language, cultural_preferences
+encounter: encounter_id, patient_id, provider_id, encounter_date, encounter_type, primary_diagnosis, length_of_stay, total_cost, cultural_background, primary_language, languages_spoken, cultural_competency_rating, cultural_match_score, language_match, patient_satisfaction, treatment_adherence, return_visit_30_days
+hospital: hospital_id, hospital_name, hospital_type, zip_code, bed_count, teaching_hospital, trauma_center, language_services_available, cultural_competency_program, interpreter_services_24_7, community_health_programs, overall_rating, patient_safety_rating, readmission_rate
+provider: provider_id, npi_number, first_name, last_name, specialty, practice_zip_code, years_experience, medical_school_country, board_certified, languages_spoken, interpreter_services, cultural_certifications, minority_health_experience, community_involvement, patient_satisfaction_score, communication_rating, cultural_competency_rating, hospital_affiliation, accepts_new_patients, provider_race, provider_ethnicity 
+
+Now i want a matching algorithm to match the patient and doctors based on the cultural, specialization and language metrics. However, few things to keep in mind.
+
+1. I want a machine learning algorithm
+
+2. The weightage of the metrics needs to be learned from the data. I dont want something where random weights are assigned and the doctors are recommended.
+
+3. some validation criteria should also be there to check whether the recommendations are correct. with training and testing sections 
+
+4. few approaches i can think of are a) Collaborative filtering, b) CSM, c) psm. Give the code for these as well as any approach you think is suitable for the problem
+5.  in the encounter data: the maximum repeated encounters between a pair of patient and provider is 2. most of the patient and provider pair have 1 encounter between them.
