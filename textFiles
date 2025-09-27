@@ -1,0 +1,9 @@
+Now i want a matching algorithm to match the patient and doctors based on the cultural, specialization and language metrics. However, few things to keep in mind.
+
+1. I want a machine learning algorithm
+
+2. The weightage of the metrics needs to be learned from the data. I dont want something where random weights are assigned and the doctors are recommended.
+
+3. some validation criteria should also be there to check whether the recommendations are correct.
+
+4. few approaches i can think of are a) Collaborative filtering, b) CSM, c) psm. Give the code for these as well as any approach you think is suitable for the problem
